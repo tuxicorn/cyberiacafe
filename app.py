@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from flask import Flask, render_template
-from datetime import datetime
+from datetime import datetime, timezone
 import sqlite3
 import threading
 import time
@@ -14,14 +14,13 @@ STARTED = False
 
 
 def last_update():
-  return datetime.utcnow().strftime("%a, %d %b %Y, %H:%M:%S")
+  return datetime.now(timezone.utc).strftime("%a, %d %b %Y, %H:%M:%S")
 
 def run_pysocks():
   while True:
     print("\nRunning")
-    print(threading.enumerate())
     pysocks.update_db()
-    time.sleep(15) #*60 FIXME
+    time.sleep(15*60)
 
 @app.route('/', methods=['GET'])
 def index():
