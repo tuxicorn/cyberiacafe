@@ -5,8 +5,7 @@
 
 
 <p align="center">
-  <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/tuxicorn/onions.watch" />
-  <img alt="Github License" src="https://img.shields.io/github/license/tuxicorn/onions.watch" />
+ <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/tuxicorn/onions.watch" />
  <img alt="PR friendly" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat" />
  <img alt="Python Version" src="https://img.shields.io/github/pipenv/locked/python-version/tuxicorn/onions.watch" />
  <img alt="Flask Version" src="https://img.shields.io/github/pipenv/locked/dependency-version/tuxicorn/onions.watch/flask/master" />
@@ -70,8 +69,3 @@ pipenv run python app.py
 </br>
 </br>
 </br>
-
-<p align="center">
-<b><i>I solemnly swear that i am up to no dark.</i></b>
-  
-</p>
