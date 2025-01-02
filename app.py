@@ -1,10 +1,10 @@
 from flask import Flask, render_template
-from datetime import datetime
+from datetime import datetime, timezone
 import sqlite3
 
 app = Flask(__name__)
 
-last_update = datetime.utcnow().strftime("%a, %d %b %Y, %H:%M:%S")
+last_update = datetime.now(timezone.utc).strftime("%a, %d %b %Y, %H:%M:%S")
 
 @app.route('/', methods=['GET'])
 def index():
