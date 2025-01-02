@@ -3,7 +3,7 @@
 {% block content %}
 
     <h3>onions.watch: Is a darknet site online ? 
-    <span>Updated {{ last_update }} UTC<br></span></h3>
+    <span>Updated {{ last_update }}<br></span></h3>
 
     <p>
       <b>You are on the clearnet.</b> It is not recommended to view our site here. Domain names are not as secure as Tor hidden services. Install Tor Browser and visit us at our .onion instead:
@@ -26,12 +26,14 @@
         <code>{{ onion['address'] }}</code>
       {% endif %}
     {% endfor %}
-    as your home page to save time. Links are PGP verified and unclickable for your safety. onions.watch's 
-    <a href="#philosophy">philosophy.</a> 
+    as your home page to save time. Links are PGP verified and unclickable for your safety. onion.watch
+    <a href="#philosophy">philosophy</a> 
+    and 
+    <a href="#donations">finances</a>
   </p>
 
   <p>
-    <b>This resource is intended for informational purposes only.</b> We do not vouch for any sites.
+    <b>This resource is intended for researchers only.</b> We do not vouch for any sites.
   </p>
 
   {% for onion in onions %}
@@ -49,15 +51,19 @@
         </ul>
       </div>
   {% endfor %}
-  
+
   <a name="philosophy"></a>
-  <h3 class="html philosophy">Philosophy</h3>
+  <h3 class="html">Philosophy</h3>
   <p>Always fast, one server request. No tracking ever, no javascript ever.</p>
   <p>Accurate URLs verified by PGP. No direct linking in order to protect against DNS leaks from accidental clicking in a clearnet browser.</p>
   <p>Knowledge of darknet site uptime is important to many cybersecurity researchers. This site is provided for information only. No endorsements are made or implied regarding any sites or organizations mentioned here.</p>
   <p>Want a link listed or removed here? Email hello -a-t- onions.watch</p>
   <p>Defend your right to privacy: <a href="https://supporters.eff.org/donate/">donate to the EFF.</a></p>
   
+  <a name="donations"></a>
+  <h5 class="html">Donations are Appreciated</h5>
+  <p>onion.watch is supported by our users. No sites pay for placement or advertisements, no affiliate links have or will ever be used. If this resource has helped you please consider sending a contribution.</p>
+  <p>Monero: <code></code></p>
   <h5 class="html">PGP Key</h5>
   <p>My current key is available at <a href="/pgp.txt">/pgp.txt</a>.</p>
   <p>
